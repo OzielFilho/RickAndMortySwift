@@ -14,7 +14,7 @@ class FetchRickAndMortyCharactersUsecaseImpl: FetchRickAndMortyCharactersUsecase
         self.repository = repository
     }
 
-    func execute() async throws -> [RickAndMortyCharacter] {
-        return try await repository.fetchCharacters()
+    func execute(page: Int? = nil) async throws -> RickAndMortyCharacters {
+        return try await repository.fetchCharacters(page: page)
     }
 }

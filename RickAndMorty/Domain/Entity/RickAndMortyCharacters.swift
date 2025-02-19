@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct RickAndMortyCharacters: Decodable, Equatable {
+    let info: RickAndMortyCharacterInfo
+    let results: [RickAndMortyCharacter]
+}

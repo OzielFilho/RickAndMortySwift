@@ -12,9 +12,12 @@ class RickAndMortyRepositoryImpl: RickAndMortyRepository {
         self.httpClient = httpClient
     }
 
-    func fetchCharacters() async throws -> [RickAndMortyCharacter] {
-        let endpoint = Endpoints.characters
-        let response: FetchRickAndMortyCharactersResponse = try await httpClient.get(url: endpoint)
-        return response.results
+    func fetchCharacters(page: Int? = nil) async throws -> RickAndMortyCharacters {
+        var endpoint = Endpoints.characters
+        if let page = page {
+            endpoint = "\(endpoint)?page=\(page)"
+        }
+        let response: RickAndMortyCharacters = try await httpClient.get(url: endpoint)
+        return response
     }
 }

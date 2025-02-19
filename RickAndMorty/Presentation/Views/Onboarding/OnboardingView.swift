@@ -20,53 +20,49 @@ struct OnboardingView: View {
                     }
                 }
         } else {
-            GeometryReader { geometry in
-                VStack {
-                    RickAndMortyLogo(geometry: geometry)
+            NavigationView {
+                GeometryReader { geometry in
                     VStack {
-                        NavigationStack {
-                            VStack {
-                                NavigationLink("Ir para os personagens", destination: HomeView())
-                                    .padding()
-                                    .font(.title)
-                                    .foregroundStyle(.white)
-                                    .buttonStyle(.bordered)
+                        RickAndMortyLogo(geometry: geometry)
+                        VStack {
+                            NavigationLink("Go to characters", destination: HomeView())
+                                .padding()
+                                .font(.title)
+                                .foregroundStyle(.white)
+                                .buttonStyle(.bordered)
+
+                            Spacer().frame(height: geometry.safeAreaInsets.bottom)
+                            HStack {
+                                SocialMediaButton(title: "GitHub", icon: AppImages.GitHub,
+                                                  onTap: {
+                                                      openExternalLink(
+                                                          url: ExternalLinks.PersonalGitHub.getURL()
+                                                      )
+                                                  })
+
+                                SocialMediaButton(title: "Linkedin", icon: AppImages.Linkedin,
+                                                  onTap: {
+                                                      openExternalLink(
+                                                          url:
+                                                          ExternalLinks
+                                                              .PersonalLinkedin.getURL()
+                                                      )
+                                                  })
                             }
-                            .background(Color.black)
-                            .foregroundColor(.white)
                         }
-
-                        Spacer().frame(height: geometry.safeAreaInsets.bottom)
-                        HStack {
-                            SocialMediaButton(title: "GitHub", icon: AppImages.GitHub,
-                                              onTap: {
-                                                  openExternalLink(
-                                                      url: ExternalLinks.PersonalGitHub.getURL()
-                                                  )
-                                              })
-
-                            SocialMediaButton(title: "Linkedin", icon: AppImages.Linkedin,
-                                              onTap: {
-                                                  openExternalLink(
-                                                      url:
-                                                      ExternalLinks
-                                                          .PersonalLinkedin.getURL()
-                                                  )
-                                              })
-                        }
+                        .padding()
                     }
-                    .padding()
+                    .frame(
+                        maxWidth: .infinity,
+                        maxHeight: .infinity
+                    )
+                    .background(
+                        backgroundImage.image()
+                            .resizable()
+                            .scaledToFill()
+                            .edgesIgnoringSafeArea(.all)
+                    ).ignoresSafeArea()
                 }
-                .frame(
-                    maxWidth: .infinity,
-                    maxHeight: .infinity
-                )
-                .background(
-                    backgroundImage.image()
-                        .resizable()
-                        .scaledToFill()
-                        .edgesIgnoringSafeArea(.all)
-                ).ignoresSafeArea()
             }
         }
     }
