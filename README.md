@@ -18,5 +18,6 @@ A aplicação será composta pelas seguintes views:
 	•	Onboarding Screen: Tela de introdução com informações iniciais.
 	•	Home View: Tela principal com uma lista de personagens, exibindo (Nome, Avatar, Status e Espécie)
 
-A consulta será feita para obter dados da API pública: https://rickandmortyapi.com/api/character
-Figma : https://www.figma.com/design/eoO2lnldlxcGDC4CXz4ngU/React-design-(Rick-%26-Morty-API)-(Community)?node-id=85-4&t=4ZwJlf4b0wAm65hJ-0
+A consulta será feita para obter dados da API pública: [API](https://rickandmortyapi.com/api/character)
+
+Figma : [Figma](https://www.figma.com/design/eoO2lnldlxcGDC4CXz4ngU/React-design-(Rick-%26-Morty-API)-(Community)?node-id=85-4&t=4ZwJlf4b0wAm65hJ-0)
