@@ -3,4 +3,294 @@
    uuid = "63771B0A-82CB-4C67-94B6-E56C833615DE"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ED1AFFE4-C1A4-496B-8292-B8FD935EF9D9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMorty/Data/Repository/RickAndMortyRepositoryImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "fetchCharacters(page:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "ED1AFFE4-C1A4-496B-8292-B8FD935EF9D9 - ea24d8340003c760"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for RickAndMorty.RickAndMortyRepositoryImpl.fetchCharacters(page: Swift.Optional&lt;Swift.Int&gt;) async throws -&gt; RickAndMorty.RickAndMortyCharacters"
+                  moduleName = "RickAndMorty.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ozielpontes/Documents/Repositories/RickAndMortySwift/RickAndMorty/Data/Repository/RickAndMortyRepositoryImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17">
+               </Location>
+               <Location
+                  uuid = "ED1AFFE4-C1A4-496B-8292-B8FD935EF9D9 - ea24d8340003c760"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for RickAndMorty.RickAndMortyRepositoryImpl.fetchCharacters(page: Swift.Optional&lt;Swift.Int&gt;) async throws -&gt; RickAndMorty.RickAndMortyCharacters"
+                  moduleName = "RickAndMorty.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ozielpontes/Documents/Repositories/RickAndMortySwift/RickAndMorty/Data/Repository/RickAndMortyRepositoryImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "763506CF-F4FB-4F02-BC06-71B3F76D81C9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMorty/Data/Repository/RickAndMortyRepositoryImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "fetchCharacters(page:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6334CF4F-1E4F-4503-B541-DB3EBC406C39"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMorty/Data/Repository/RickAndMortyRepositoryImpl.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "fetchCharacters(page:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6334CF4F-1E4F-4503-B541-DB3EBC406C39 - ea24d8340003c6c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for RickAndMorty.RickAndMortyRepositoryImpl.fetchCharacters(page: Swift.Optional&lt;Swift.Int&gt;) async throws -&gt; RickAndMorty.RickAndMortyCharacters"
+                  moduleName = "RickAndMorty.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ozielpontes/Documents/Repositories/RickAndMortySwift/RickAndMorty/Data/Repository/RickAndMortyRepositoryImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20">
+               </Location>
+               <Location
+                  uuid = "6334CF4F-1E4F-4503-B541-DB3EBC406C39 - b14bbe09164eb3bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for RickAndMorty.RickAndMortyRepositoryImpl.fetchCharacters(page: Swift.Optional&lt;Swift.Int&gt;) async throws -&gt; RickAndMorty.RickAndMortyCharacters"
+                  moduleName = "RickAndMorty.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ozielpontes/Documents/Repositories/RickAndMortySwift/RickAndMorty/Data/Repository/RickAndMortyRepositoryImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20">
+               </Location>
+               <Location
+                  uuid = "6334CF4F-1E4F-4503-B541-DB3EBC406C39 - f1a67ea71e4a9adb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for RickAndMorty.RickAndMortyRepositoryImpl.fetchCharacters(page: Swift.Optional&lt;Swift.Int&gt;) async throws -&gt; RickAndMorty.RickAndMortyCharacters"
+                  moduleName = "RickAndMorty.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ozielpontes/Documents/Repositories/RickAndMortySwift/RickAndMorty/Data/Repository/RickAndMortyRepositoryImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20">
+               </Location>
+               <Location
+                  uuid = "6334CF4F-1E4F-4503-B541-DB3EBC406C39 - 8a66ce5fa9a9fcd8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for RickAndMorty.RickAndMortyRepositoryImpl.fetchCharacters(page: Swift.Optional&lt;Swift.Int&gt;) async throws -&gt; RickAndMorty.RickAndMortyCharacters"
+                  moduleName = "RickAndMorty.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ozielpontes/Documents/Repositories/RickAndMortySwift/RickAndMorty/Data/Repository/RickAndMortyRepositoryImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20">
+               </Location>
+               <Location
+                  uuid = "6334CF4F-1E4F-4503-B541-DB3EBC406C39 - 8a66ce5fa9a9fcd8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for RickAndMorty.RickAndMortyRepositoryImpl.fetchCharacters(page: Swift.Optional&lt;Swift.Int&gt;) async throws -&gt; RickAndMorty.RickAndMortyCharacters"
+                  moduleName = "RickAndMorty.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ozielpontes/Documents/Repositories/RickAndMortySwift/RickAndMorty/Data/Repository/RickAndMortyRepositoryImpl.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "30F53D7C-60C4-4002-9897-FA4D7DD97274"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMorty/Presentation/ViewModel/RickAndMortyViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "fetchCharacters(more:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4B171B2C-AF1F-480B-BBFB-B5C00C3CC12F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMorty/Presentation/ViewModel/RickAndMortyViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "fetchCharacters(more:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8D986CA0-9A4F-46CB-ADFF-31CAB42B79AC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMorty/Presentation/ViewModel/RickAndMortyViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "fetchCharacters(more:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8D986CA0-9A4F-46CB-ADFF-31CAB42B79AC - 8189fbea158ab5f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for RickAndMorty.RickAndMortyViewModel.fetchCharacters(more: Swift.Bool) async -&gt; ()"
+                  moduleName = "RickAndMorty.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ozielpontes/Documents/Repositories/RickAndMortySwift/RickAndMorty/Presentation/ViewModel/RickAndMortyViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38">
+               </Location>
+               <Location
+                  uuid = "8D986CA0-9A4F-46CB-ADFF-31CAB42B79AC - a4570a7a7b9e1bf0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for RickAndMorty.RickAndMortyViewModel.fetchCharacters(more: Swift.Bool) async -&gt; ()"
+                  moduleName = "RickAndMorty.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ozielpontes/Documents/Repositories/RickAndMortySwift/RickAndMorty/Presentation/ViewModel/RickAndMortyViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38">
+               </Location>
+               <Location
+                  uuid = "8D986CA0-9A4F-46CB-ADFF-31CAB42B79AC - 35ecde8971e471f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for RickAndMorty.RickAndMortyViewModel.fetchCharacters(more: Swift.Bool) async -&gt; ()"
+                  moduleName = "RickAndMorty.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ozielpontes/Documents/Repositories/RickAndMortySwift/RickAndMorty/Presentation/ViewModel/RickAndMortyViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38">
+               </Location>
+               <Location
+                  uuid = "8D986CA0-9A4F-46CB-ADFF-31CAB42B79AC - 148c928f3ca324c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for RickAndMorty.RickAndMortyViewModel.fetchCharacters(more: Swift.Bool) async -&gt; ()"
+                  moduleName = "RickAndMorty.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ozielpontes/Documents/Repositories/RickAndMortySwift/RickAndMorty/Presentation/ViewModel/RickAndMortyViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DD3D2E95-DF24-4EA0-804F-FB428E65E2D3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMorty/Presentation/ViewModel/RickAndMortyViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "fetchCharacters(more:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ECBF0F0C-DADA-43B5-BD5A-354EB3BC78DE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMorty/Presentation/ViewModel/RickAndMortyViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "fetchCharacters(more:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -23,13 +23,16 @@ class RickAndMortyViewModel: ObservableObject {
     func fetchCharacters(more: Bool = false) async {
         isLoading = true
         do {
-            if characters.count == info?.count || info?.pages == currentPage {
-                return
-            }
+            
             if more {
                 if currentPage == nil {
                     currentPage = 1
                 }
+                
+                if characters.count == info?.count || info?.pages == currentPage {
+                    return
+                }
+                
                 currentPage! += 1
             }
             let newCharacters: RickAndMortyCharacters = try await fetchRickAndMoryCharacters.execute(page: currentPage)
