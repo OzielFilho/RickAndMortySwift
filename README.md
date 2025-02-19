@@ -5,8 +5,12 @@
 Este é um projeto desenvolvido para testar e aprimorar meus conhecimentos em Swift e SwiftUI. O objetivo é criar um app simples utilizando a API do Rick and Morty, com foco em:
 
 	•	SwiftUI para construção da interface.
+ 
 	•	Consulta de API para buscar e exibir dados.
-	•	Controle e organização da arquitetura para garantir boas práticas no desenvolvimento. Trazendo um pouco do CleanArch e MVVM
+ 
+	•	Controle e organização da arquitetura para garantir boas práticas no desenvolvimento. 
+		Trazendo um pouco do CleanArch e MVVM.
+  
 	•	Paginação dos dados da api
 
 
