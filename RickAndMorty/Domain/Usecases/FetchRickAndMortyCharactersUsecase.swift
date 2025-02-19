@@ -8,5 +8,5 @@
 import Foundation
 
 protocol FetchRickAndMortyCharactersUsecase {
-    func execute() async throws -> [RickAndMortyCharacter]
+    func execute(page: Int?) async throws -> RickAndMortyCharacters
 }

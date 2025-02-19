@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RickAndMortyCharacter: Decodable {
+struct RickAndMortyCharacter: Decodable, Equatable {
     let id: Int
     let name: String
     let image: String

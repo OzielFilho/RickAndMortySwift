@@ -9,4 +9,5 @@ import Foundation
 
 struct FetchRickAndMortyCharactersResponse: Decodable {
     let results: [RickAndMortyCharacter]
+    let info:
 }

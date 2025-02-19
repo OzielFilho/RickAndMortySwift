@@ -17,4 +17,15 @@ enum RickAndMortyCharacterStatus: String, Codable, CaseIterable {
             .allCases
             .first { $0.rawValue.lowercased() == rawValue.lowercased() } ?? .unknown
     }
+
+    func iconText() -> String {
+        switch self {
+        case .alive:
+            return "😎"
+        case .dead:
+            return "☠️"
+        case .unknown:
+            return "❓"
+        }
+    }
 }

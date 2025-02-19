@@ -10,6 +10,8 @@ import Foundation
 @MainActor
 class RickAndMortyViewModel: ObservableObject {
     private let fetchRickAndMoryCharacters: FetchRickAndMortyCharactersUsecase
+    private var currentPage: Int?
+    private var info: RickAndMortyCharacterInfo?
 
     @Published var characters: [RickAndMortyCharacter] = []
     @Published var isLoading: Bool = false
@@ -18,10 +20,21 @@ class RickAndMortyViewModel: ObservableObject {
         self.fetchRickAndMoryCharacters = fetchRickAndMoryCharacters
     }
 
-    func fetchCharacters() async {
+    func fetchCharacters(more: Bool = false) async {
         isLoading = true
         do {
-            characters = try await fetchRickAndMoryCharacters.execute()
+            if characters.count == info?.count || info?.pages == currentPage {
+                return
+            }
+            if more {
+                if currentPage == nil {
+                    currentPage = 1
+                }
+                currentPage! += 1
+            }
+            let newCharacters: RickAndMortyCharacters = try await fetchRickAndMoryCharacters.execute(page: currentPage)
+            info = newCharacters.info
+            characters.append(contentsOf: newCharacters.results)
         } catch {
             print("Erro ao buscar personagens: \(error)")
         }
