@@ -25,3 +25,10 @@ A aplicação será composta pelas seguintes views:
 A consulta será feita para obter dados da API pública: [API](https://rickandmortyapi.com/api/character)
 
 Figma : [Figma](https://www.figma.com/design/eoO2lnldlxcGDC4CXz4ngU/React-design-(Rick-%26-Morty-API)-(Community)?node-id=85-4&t=4ZwJlf4b0wAm65hJ-0)
+
+
+### Screenshots
+<img src="https://github.com/user-attachments/assets/7bf3a9df-f2ca-4392-ae26-25ec90275880" width="400" />
+<img src="https://github.com/user-attachments/assets/72a8ddef-5e7f-4fbb-a08d-5c7b840ad77b" width="400" />
+<img src="https://github.com/user-attachments/assets/80c740de-c560-40c1-8c38-0c804dc8ae31" width="400" />
+<img src="https://github.com/user-attachments/assets/992bf9fe-29fd-42e5-83d2-42ae085a3cbf" width="400" />
