@@ -17,7 +17,7 @@ class RickAndMortyRepositoryImpl: RickAndMortyRepository {
         if let page = page {
             endpoint = "\(endpoint)?page=\(page)"
         }
-        let response: RickAndMortyCharacters = try await httpClient.get(url: endpoint)
-        return response
+        let response: RickAndMortyCharactersModel = try await httpClient.get(url: endpoint)
+        return response.toDomain()
     }
 }

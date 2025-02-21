@@ -11,65 +11,73 @@ struct OnboardingView: View {
 
     var body: some View {
         if viewModel.showSplash {
-            SplashView()
-                .onAppear {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                        withAnimation {
-                            self.viewModel.showSplash = false
-                        }
-                    }
-                }
+            splashSection
         } else {
             NavigationView {
                 GeometryReader { geometry in
-                    VStack {
-                        RickAndMortyLogo(geometry: geometry)
-                        VStack {
-                            NavigationLink("Go to characters", destination: HomeView())
-                                .padding()
-                                .font(.title)
-                                .foregroundStyle(.white)
-                                .buttonStyle(.bordered)
-
-                            Spacer().frame(height: geometry.safeAreaInsets.bottom)
-                            HStack {
-                                SocialMediaButton(title: "GitHub", icon: AppImages.GitHub,
-                                                  onTap: {
-                                                      openExternalLink(
-                                                          url: ExternalLinks.PersonalGitHub.getURL()
-                                                      )
-                                                  })
-
-                                SocialMediaButton(title: "Linkedin", icon: AppImages.Linkedin,
-                                                  onTap: {
-                                                      openExternalLink(
-                                                          url:
-                                                          ExternalLinks
-                                                              .PersonalLinkedin.getURL()
-                                                      )
-                                                  })
-                            }
-                        }
-                        .padding()
-                    }
-                    .frame(
-                        maxWidth: .infinity,
-                        maxHeight: .infinity
-                    )
-                    .background(
-                        backgroundImage.image()
-                            .resizable()
-                            .scaledToFill()
-                            .edgesIgnoringSafeArea(.all)
-                    ).ignoresSafeArea()
+                    onboardingContent(geometry: geometry)
+                        .background(backgroundImageSection)
+                        .ignoresSafeArea()
                 }
+                .navigationBarHidden(true)
             }
         }
+    }
+
+    private var splashSection: some View {
+        SplashView()
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    withAnimation {
+                        self.viewModel.showSplash = false
+                    }
+                }
+            }
+    }
+
+    private func onboardingContent(geometry: GeometryProxy) -> some View {
+        VStack {
+            RickAndMortyLogo(geometry: geometry)
+            mainContent(geometry: geometry)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+    }
+
+    private func mainContent(geometry: GeometryProxy) -> some View {
+        VStack {
+            NavigationLink("Go to characters", destination: HomeView())
+                .padding()
+                .font(.title)
+                .foregroundStyle(.white)
+                .buttonStyle(.bordered)
+
+            Spacer().frame(height: geometry.safeAreaInsets.bottom)
+
+            socialMediaButtons
+        }
+        .padding()
+    }
+
+    private var socialMediaButtons: some View {
+        HStack {
+            SocialMediaButton(title: "GitHub", icon: AppImages.GitHub, onTap: {
+                openExternalLink(url: ExternalLinks.PersonalGitHub.getURL())
+            })
+
+            SocialMediaButton(title: "Linkedin", icon: AppImages.Linkedin, onTap: {
+                openExternalLink(url: ExternalLinks.PersonalLinkedin.getURL())
+            })
+        }
+    }
+
+    private var backgroundImageSection: some View {
+        backgroundImage.image()
+            .resizable()
+            .scaledToFill()
+            .edgesIgnoringSafeArea(.all)
     }
 }
 
 #Preview {
-    OnboardingView(
-        viewModel: OnboardingViewModel()
-    )
+    OnboardingView(viewModel: OnboardingViewModel())
 }
